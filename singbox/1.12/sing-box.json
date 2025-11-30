@@ -5,12 +5,12 @@
         "tag": "cf",
         "type": "https",
         "server": "1.1.1.1",
-        "detour": "proxy"
+        "detour": "Proxy"
       },
       {
-        "tag": "tx",
+        "tag": "ali",
         "type": "https",
-        "server": "119.29.29.29"
+        "server": "223.5.5.5"
       },
       {
         "tag": "fakeip",
@@ -23,7 +23,7 @@
       {
         "clash_mode": "Direct",
         "action": "route",
-        "server": "tx"
+        "server": "ali"
       },
       {
         "clash_mode": "Global",
@@ -46,7 +46,7 @@
       {
         "rule_set": "cn_domain",
         "action": "route",
-        "server": "tx"
+        "server": "ali"
       }
     ],
     "final": "cf",
@@ -54,7 +54,7 @@
   },
   "route": {
     "default_domain_resolver": {
-      "server": "tx"
+      "server": "ali"
     },
     "rules": [
       {
@@ -142,7 +142,7 @@
           }
         ],
         "action": "route",
-        "outbound": "proxy"
+        "outbound": "Proxy"
       },
       {
         "action": "resolve"
@@ -315,7 +315,7 @@
       "tag": "google",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -330,13 +330,13 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "apple",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -357,7 +357,7 @@
       "tag": "telegram",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -372,13 +372,13 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "bilibili",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -399,7 +399,7 @@
       "tag": "netflix",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -414,13 +414,13 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "bahamut",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -435,13 +435,13 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "youtube",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -456,13 +456,13 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "openai",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -483,7 +483,7 @@
       "tag": "cn",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -504,7 +504,7 @@
       "tag": "final",
       "type": "selector",
       "outbounds": [
-        "proxy",
+        "Proxy",
         "direct",
         "hk",
         "hk-auto",
@@ -519,7 +519,7 @@
         "all",
         "all-auto"
       ],
-      "default": "proxy"
+      "default": "Proxy"
     },
     {
       "tag": "hk",
@@ -604,7 +604,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "proxy",
+        "Proxy",
         "hk",
         "hk-auto",
         "tw",
